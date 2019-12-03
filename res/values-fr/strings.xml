@@ -520,4 +520,15 @@
     <string name="sms_security_check_limit_summary">Les applications peuvent envoyer %s messages en une minute avant qu\'une confirmation ne soit requise</string>
     <string name="sms_security_check_limit_summary_none">Les applications ne sont pas autorisées à envoyer de messages sans confirmation</string>
     <string name="sms_security_check_limit_always_confirm">Toujours confirmer</string>
+    <string name="network_restriction_manager_settings_title">Configuration des restrictions des données</string>
+    <string name="network_restriction_manager_title">Restriction des données</string>
+    <string name="network_restriction_manager_block_new_apps" >Bloquer les nouvelles applications</string>
+    <string name="network_restriction_manager_show_system_apps" >Montrer les applications systeme</string>
+    <string name="network_restriction_manager_show_vpn" >Montrer le VPN</string>
+    <string name="network_restriction_manager_show_background_data" >Montrer les données de base</string>
+    <string name="network_restriction_manager_show_data_saver" >Montrer les données serveur</string>
+    <string name="network_restriction_manager_block_all_apps" >Bloquer toutes les applications </string>
+    <string name="network_restriction_manager_unblock_all_apps" >Débloquer toutes les applications</string>
+    <string name="network_restriction_manager_apps">Applications</string>
+    <string name="network_restriction_manager_no_apps_to_show">Applications cachées</string>
 </resources>
