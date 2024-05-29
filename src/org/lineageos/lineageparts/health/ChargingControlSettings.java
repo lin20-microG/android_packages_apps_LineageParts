@@ -218,11 +218,15 @@ public class ChargingControlSettings extends SettingsPreferenceFragment implemen
     }
 
     public static final SummaryProvider SUMMARY_PROVIDER = (context, key) -> {
-        if (HealthInterface.isChargingControlSupported(context)) {
-            HealthInterface healthInterface = HealthInterface.getInstance(context);
-            if (healthInterface.getEnabled()) {
-                return context.getString(R.string.enabled);
+        try {
+            if (HealthInterface.isChargingControlSupported(context)) {
+                HealthInterface healthInterface = HealthInterface.getInstance(context);
+                if (healthInterface.getEnabled()) {
+                    return context.getString(R.string.enabled);
+                }
             }
+        } catch (Exception e) {
+        // do nothing
         }
         return context.getString(R.string.disabled);
     };
